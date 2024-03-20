@@ -12,14 +12,13 @@ return {
   },
 
 
-
   ---- 功能拓展
-  -- 自动签名
+  -- 函数签名
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
     opts = {},
-    config = function(_, opts) require'lsp_signature'.setup(opts) end
+    config = function(_, opts) require 'lsp_signature'.setup(opts) end
   },
   -- 补全
   {
@@ -41,16 +40,19 @@ return {
     'nvim-tree/nvim-tree.lua',
     dependencies = 'nvim-tree/nvim-web-devicons'
   },
-  -- 用于括号补全
+  -- 括号补全
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
     opts = {} -- this is equalent to setup({}) function
   },
-  -- 竖线对齐
+  -- 便捷注释
   {
-    "shellRaining/hlchunk.nvim",
-    event = { "UIEnter" },
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+    lazy = false,
   },
 
 
@@ -72,5 +74,10 @@ return {
   {
     'nvim-lualine/lualine.nvim',
     dependencies = 'nvim-tree/nvim-web-devicons'
+  },
+  -- 竖线对齐
+  {
+    "shellRaining/hlchunk.nvim",
+    event = { "UIEnter" },
   },
 }

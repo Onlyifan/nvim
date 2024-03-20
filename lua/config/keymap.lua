@@ -1,4 +1,5 @@
 local setmap = vim.keymap.set
+local opt = { noremap = true, silent = true }
 
 vim.g.mapleader = ' '
 
@@ -10,12 +11,14 @@ setmap('v', '>', '>gv', { noremap = true }) -- 增强型右移操作：视觉选
 setmap('v', '<', '<gv', { noremap = true }) -- 增强型左移操作：视觉选择后减少缩进并保持选择状态
 
 -- 只在普通模式下生效的映射
-setmap('n', '<Space>q', ':q<CR>', {noremap = true})
+setmap('n', '<Space>q', ':q<CR>', { noremap = true })
 
-setmap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true }) -- 打开文件树
-setmap('n', '<leader>n', ':bn<CR>', { noremap = true, silent = true })             -- 跳转到下一个窗口
-setmap('n', '<leader>m', ':bp<CR>', { noremap = true, silent = true })             -- 跳转到前一个窗口
---setmap('n', '<leader>x', ':bd<CR>', {noremap = true, silent = true})             -- 关闭当前窗口
+setmap('n', '<leader>t', ':NvimTreeToggle<CR>', opt) -- 打开文件树
+setmap('n', '<leader>n', ':bn<CR>', opt)             -- 跳转到下一个窗口
+setmap('n', '<leader>m', ':bp<CR>', opt)             -- 跳转到前一个窗口
+setmap('n', '<leader>x', ':bd<CR>', opt)             -- 关闭当前窗口
+setmap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opt)
+setmap("x", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>", opt)
 
 -- 开关实时内联提示信息
 local hint = vim.lsp.inlay_hint
