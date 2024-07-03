@@ -1,0 +1,312 @@
+{
+    "editor.fontLigatures": true,
+    "cmake.configureOnOpen": true,
+    "cmake.options.statusBarVisibility": "visible",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "cmake.showOptionsMovedNotification": false,
+    // "terminal.integrated.shellIntegration.suggestEnabled": true,
+    "editor.fontSize": 14,
+    "files.autoSave": "onFocusChange",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.accessibilitySupport": "off",
+    "security.promptForLocalFileProtocolHandling": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "workbench.settings.applyToAllProfiles": [
+        "editor.fontFamily"
+    ],
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.largeFileOptimizations": false,
+    "files.associations": {
+        "*.md": "markdown"
+    },
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+    "update.mode": "none",
+    "scm.alwaysShowRepositories": true,
+    "scm.diffDecorationsGutterPattern": {
+        "modified": false
+    },
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "editor.wordWrap": "on",
+    "screencastMode.keyboardOptions": {
+        "showCommandGroups": true
+    },
+    "keyboard.touchbar.enabled": false,
+    "leetcode-problem-rating.defaultLanguage": "cpp",
+    "leetcode-problem-rating.includeTemplates": [
+        {
+            "language": "cpp",
+            "template": [
+                "using namespace std;",
+            ]
+        }
+    ],
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 16,
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "leetcode-problem-rating.hint.configWebviewMarkdown": false,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif, 'JetBrainsMono Nerd Font'",
+    "editor.detectIndentation": false,
+    "git.openRepositoryInParentFolders": "always",
+    "terminal.external.osxExec": "zsh",
+    "terminal.integrated.enableImages": true,
+    "leetcode-problem-rating.hint.commentDescription": false,
+    "leetcode-problem-rating.hint.commandShortcut": false,
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    "editor.quickSuggestionsDelay": 0,
+    "editor.tabCompletion": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "python.analysis.userFileIndexingLimit": -1,
+    "terminal.integrated.experimentalInlineChat": true,
+    "editor.suggest.preview": true,
+    "editor.colorDecoratorsLimit": 1000,
+    "editor.defaultColorDecorators": true,
+    "telemetry.telemetryLevel": "off",
+    "python.analysis.autoSearchPaths": false,
+    "git.confirmSync": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "clangd.arguments": [
+        // "-j=16",
+        // "--completion-style=detailed",
+        // "--header-insertion=iwyu",
+        // "--pch-storage=memory",
+        // "--background-index",
+        // "--background-index-priority=normal",
+        "--ranking-model=decision_forest",
+        // "--log=error",
+        // "--compile-commands-dir=build",
+        // "--all-scopes-completion",
+        "--parse-forwarding-functions",
+        // "--function-arg-placeholders",
+        // "--query-driver=/usr/bin/clang++",
+        // "--clang-tidy",
+        "--include-cleaner-stdlib"
+    ],
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "git.enableSmartCommit": true,
+    "editor.scrollBeyondLastLine": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "debug.terminal.clearBeforeReusing": true,
+    "terminal.integrated.accessibleViewPreserveCursorPosition": true,
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "block",
+    "editor.cursorBlinking": "smooth",
+    "vscode-neovim.revealCursorScrollLine": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.stickyScroll.enabled": true,
+    "editor.fontVariations": false,
+    "terminal.integrated.rescaleOverlappingGlyphs": true,
+    "vscode-neovim.highlightGroups.highlights": {
+        "IncSearch": {
+            "backgroundColor": "theme.editor.findMatchBackground",
+            "borderColor": "theme.editor.findMatchBorder"
+        },
+        "CurSearch": {
+            "backgroundColor": "theme.editor.findMatchBackground",
+            "borderColor": "theme.editor.findMatchBorder"
+        },
+        "Search": {
+            "backgroundColor": "theme.editor.findMatchHighlightBackground",
+            "borderColor": "theme.editor.findMatchHighlightBorder"
+        }
+    },
+    "vscode-neovim.afterInitConfig": [
+        "set noswapfile",
+        "set clipboard+=unnamed",
+        "syntax off",
+        "set nobackup"
+    ],
+    "vscode-neovim.neovimClean": true,
+    "vscode-neovim.normalSelectionDebounceTime": 100,
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "o",
+        "r",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "backspace",
+        "delete"
+    ],
+    "debug.onTaskErrors": "abort",
+    "html.format.contentUnformatted": "",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.guides.bracketPairs": true,
+    "diffEditor.wordWrap": "on",
+    "editor.minimap.maxColumn": 200,
+    "clangd.inactiveRegions.opacity": 0.05,
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "vscode-neovim.logLevel": "none",
+    "editor.renderLineHighlight": "all",
+    "window.closeWhenEmpty": true,
+    "explorer.fileNesting.enabled": true,
+    "search.globalFindClipboard": true,
+    "terminal.integrated.copyOnSelection": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.inlayHints.padding": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.suggest.matchOnWordStartOnly": false,
+    "Lingma.LocalStoragePath": "/Users/Onlyifan/.cache/.lingma",
+    "Lingma.localMachineModel": false,
+    "Lingma.cloudModelAutoTriggerGenerateLength": "line",
+    "Lingma.cloudModelManualTriggerGenerateLength": "line",
+    "Lingma.cloudModelAutoTriggerDisplayRule": true,
+    "editor.minimap.showSlider": "always",
+    "vscode-neovim.completionDelay": 0,
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.autoClosingDelete": "always",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "security.promptForRemoteFileProtocolHandling": false,
+    "security.workspace.trust.emptyWindow": false,
+    "editor.minimap.renderCharacters": false,
+    "debug.showSubSessionsInToolBar": true,
+    "notebook.experimental.variablesView": true,
+    "debug.closeReadonlyTabsOnEnd": true,
+    "lldb.launch.terminal": "integrated",
+    "lldb.launch.sourceLanguages": [
+        "cpp"
+    ],
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "lldb.launch.env": {
+        "DYLD_LIBRARY_PATH": "/Users/Onlyifan/Documents/My_Code_Lib/lib:/opt/homebrew/lib:/opt/homebrew/opt/protobuf@3/lib"
+    },
+    "lldb.launch.initCommands": [
+        // "breakpoint set -n main -N entry"
+    ],
+    "lldb.launch.exitCommands": [
+        // "breakpoint delete entry"
+    ],
+    "editor.dragAndDrop": false,
+    "accessibility.dimUnfocused.opacity": 0.8,
+    "debug.autoExpandLazyVariables": true,
+    "launch": {
+        "version": "2.0.0",
+        "configurations": [
+            // {
+            //     "name": "C/C++: clang++ 多文件调试",
+            //     "type": "lldb",
+            //     "request": "launch",
+            //     "preLaunchTask": "C++: Multi File Debug Mode",
+            //     "cwd": "${fileDirname}",
+            //     "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            //     "args": [],
+            //     "stopOnEntry": false,
+            // },
+            // {
+            //     "name": "C/C++: clang++ 单文件调试",
+            //     "preLaunchTask": "C++: Single File Debug Mode",
+            //     "type": "lldb",
+            //     "request": "launch",
+            //     "program": "${fileDirname}/a.out",
+            //     "cwd": "${fileDirname}",
+            //     "args": [],
+            //     "stopOnEntry": false
+            // }
+            // {
+            // "name": "C/C++: clang++ 单文件调试",
+            // "type": "cppdbg",
+            // "request": "launch",
+            // "preLaunchTask": "C++: Single File Debug Mode",
+            // "program": "${fileDirname}/a.out",
+            // "args": [],
+            // "stopAtEntry": true,
+            // ""
+            // "symbolLoadInfo": {
+            // "loadAll": false,
+            // "exceptionList": ""
+            // },
+            // "cwd": "${fileDirname}",
+            // "environment": [
+            // {
+            // "name": "DYLD_LIBRARY_PATH",
+            // "value": "/Users/Onlyifan/Documents/My_Code_Lib/lib:/opt/homebrew/lib"
+            // }
+            // ],
+            // "externalConsole": false,
+            // "osx": {
+            // "MIMode": "lldb",
+            // },
+            // "linux": {
+            // "MIMode": "gdb",
+            // },
+            // },
+        ]
+    },
+    "makefile.configureOnOpen": true,
+    "editor.experimentalInlineEdit.backgroundColoring": true,
+    "editor.experimentalInlineEdit.enabled": true,
+    "editor.experimentalInlineEdit.showToolbar": "always",
+    "diffEditor.codeLens": true,
+    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "editor.suggest.showStatusBar": true,
+    "problems.showCurrentInStatus": true,
+    "terminal.integrated.tabs.defaultColor": "terminal.ansiRed",
+    "editor.smoothScrolling": true,
+    "terminal.integrated.cursorWidth": 2,
+    "debug.allowBreakpointsEverywhere": true,
+    "lldb.showDisassembly": "never",
+    "terminal.integrated.cwd": "${fileDirname}",
+    "debug.console.closeOnEnd": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.glyphMargin": true,
+    "lldb.launch.breakpointMode": "path",
+    "debug.showBreakpointsInOverviewRuler": true,
+    "explorer.compactFolders": false,
+    "notebook.compactView": false,
+    "hexeditor.columnWidth": 16,
+    "hexeditor.showDecodedText": true,
+    "hexeditor.defaultEndianness": "little",
+    "hexeditor.inspectorType": "aside",
+    "Snap.codeGeneration.doNotDisturbMode": true
+}
